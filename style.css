@@ -2,25 +2,29 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", serif;
 }
 
 body {
-  font-family: "Roboto", serif;
   background-image: url(./images/bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 4rem;
   background-color: rgb(6, 32, 32);
+  padding: 0 1rem;
 }
 
 nav .container {
-  max-width: 1400px;
   min-width: fit-content;
   width: 100%;
   position: relative;
@@ -64,17 +68,16 @@ nav .container .right {
 
 #searchBox {
   display: inline-flex;
-  position: relative;
   margin: 0 0.7rem;
   height: 100%;
 }
 
 #searchIcon {
-  position: absolute;
+  position: relative;
   height: 70%;
   opacity: 0.5;
   top: 15%;
-  right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 #searchTextBox {
@@ -91,6 +94,8 @@ nav .container .right button {
   margin: 0 0.5rem;
   padding: 0 0.7rem;
   border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 nav .container .middle {
@@ -117,4 +122,157 @@ nav .container .middle {
 
 #navMenu li a:hover {
   text-decoration: underline;
+}
+
+/* ------------------------------------ */
+
+#socials {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  display: flex;
+  height: calc(100vh - 4rem);
+  width: 6rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.verticalLine {
+  width: 0.15rem;
+  min-height: 200px;
+  height: 40%;
+  background-color: white;
+}
+
+#socials ul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#socials ul li a img {
+  width: 2.5rem;
+  margin: 1rem;
+}
+
+/* ------------------------------------ */
+
+#home,
+#aboutUs,
+#contactUs {
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 12rem;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pageHeader {
+  color: whitesmoke;
+  font-size: 5.5rem;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.pageInfo {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  display: inline-block;
+}
+
+#home .pageInfo {
+  width: 400px;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+#home button {
+  background-color: rgb(82, 143, 143);
+  width: 13rem;
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#aboutUs .pageInfo {
+  padding: 3rem;
+  background-color: rgba(28, 44, 44, 0.6);
+}
+
+#staffInfo {
+  padding-left: 6rem;
+  display: flex;
+}
+
+#staffInfo h2 {
+  font-size: 4rem;
+  flex-grow: 1;
+  margin-right: 4rem;
+}
+
+.staffCard {
+  flex-grow: 1;
+  background-color: rgba(28, 44, 44, 0.6);
+  margin: 0 0 0 1rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 3rem;
+}
+
+.staffCard .staffTittle {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(62, 156, 156);
+  margin-top: 5px;
+}
+
+#contactForm {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: rgba(28, 44, 44, 0.4);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+#contactForm input {
+  background: none;
+  border: 1px solid darkslategray;
+  height: 2.5rem;
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 1.1rem;
+}
+
+#contactForm textarea {
+  background: none;
+  resize: none;
+  color: whitesmoke;
+  padding: 5px;
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+
+#contactForm #submitBtn {
+  background-color: darkslategrey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contactUs .pageInfo,
+#contactUs .pageHeader {
+  margin: 1rem 0;
 }

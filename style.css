@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  width: 100vw;
+  height: 4rem;
+  background-color: rgb(6, 32, 32);
+}
+
+nav .container {
+  max-width: 1400px;
+  min-width: fit-content;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+
+#logo {
+  display: inline-block;
+  height: 3rem;
+}
+
+nav .container .left {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+nav .container .left h1 {
+  display: inline-block;
+  color: whitesmoke;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+nav .container .right {
+  position: absolute;
+  display: inline-flex;
+  right: 0;
+  top: 0;
+  height: 2.6rem;
+  margin: 0.7rem 0;
+  padding: 0.5rem;
+  background-color: whitesmoke;
+  border-radius: 2.6rem;
+}
+
+#searchBox {
+  display: inline-flex;
+  position: relative;
+  margin: 0 0.7rem;
+  height: 100%;
+}
+
+#searchIcon {
+  position: absolute;
+  height: 70%;
+  opacity: 0.5;
+  top: 15%;
+  right: 0.5rem;
+}
+
+#searchTextBox {
+  border: 0;
+  background-color: whitesmoke;
+  outline: none;
+  width: 15rem;
+}
+
+nav .container .right button {
+  background-color: darkslategrey;
+  color: whitesmoke;
+  border: none;
+  margin: 0 0.5rem;
+  padding: 0 0.7rem;
+  border-radius: 5px;
+}
+
+nav .container .middle {
+  display: inline-block;
+  height: 100%;
+}
+
+#navMenu {
+  height: 100%;
+}
+
+#navMenu li {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+}
+
+#navMenu li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0 15px;
+}
+
+#navMenu li a:hover {
+  text-decoration: underline;
+}
